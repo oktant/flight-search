@@ -1,24 +1,46 @@
 package handlers
 
 import (
-	"net/http"
+	"github.com/labstack/echo/v4"
+	"github.com/srinivasvinay/flight-search/dao"
 	"github.com/srinivasvinay/flight-search/models"
-	"strconv"
-	"encoding/json"
+	"net/http"
 )
+var da dao.GormDatabase
 
-func GetFlights(w http.ResponseWriter, r *http.Request) {
-	a := make([]models.SearchResults, 0)
-	var i int64 = 0
-	for ; i < 10; i++ {
-		a = append(a, models.SearchResults{
-			FlightNo:        "Flight-No-" + strconv.FormatInt(i, 10),
-			Source:          r.URL.Query()["source"][0],
-			Destination:     r.URL.Query()["dest"][0],
-			TravelStartDate: r.URL.Query()["st-date"][0],
-			TravelEndDate:   r.URL.Query()["ed-date"][0],
-		})
+func GetFlights(c echo.Context) (err error){
+	source := c.QueryParam("source")
+	destination := c.QueryParam("destination")
+	if len(source) >0 && len(destination) >0 {
+		return c.JSON(http.StatusOK, da.GetFlightsBySourceAndDestination(source, destination))
+
 	}
-	output, _ := json.Marshal(&a)
-	w.Write(output)
+	return c.JSON(http.StatusOK, da.GetAllFlights())
+}
+
+func CreateFlight(c echo.Context) (err error){
+	flight := new (models.Flight)
+	if err=c.Bind(flight); err !=nil {
+			return echo.NewHTTPError(http.StatusOK, "can't bind")
+	}
+
+	return c.JSON(http.StatusOK, da.CreateNewFlight(flight))
+}
+
+func GetBookings(c echo.Context) (err error) {
+
+	return c.JSON(http.StatusOK, da.GetBookings())
+}
+
+func CreateBooking(c echo.Context) (err error) {
+	booking := new (models.Booking)
+	if err=c.Bind(booking); err !=nil {
+		return echo.NewHTTPError(http.StatusOK, "can't bind")
+	}
+	return c.JSON(http.StatusOK, da.CreateBooking(booking))
+}
+
+func GetBooking(c echo.Context) (err error) {
+	bookId := c.Param("id")
+	return c.JSON(http.StatusOK, da.GetBooking(bookId))
 }
