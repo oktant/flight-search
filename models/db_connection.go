@@ -13,12 +13,12 @@ type DbConnection struct {
 }
 func (connection *DbConnection) New() *DbConnection {
 	connection = &DbConnection{
-		host:     "database-1.cemgdq2nipfl.us-east-2.rds.amazonaws.com",
-		port:     "5432",
-		user:     "postgres",
-		dbName:   "postgres",
-		password: "f5S3*8eY*GlQLQmzAgIw",
-		sslMode:  "require",
+		host:     "your-host-name",
+		port:     "your-port-name",
+		user:     "your-user-name",
+		dbName:   "your-dbname-name",
+		password: "your-password",
+		sslMode:  "your-sslmode",
 	}
 	return connection
 }
