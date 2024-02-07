@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.5](https://github.com/oktayalizada/flight-search/compare/v0.0.4...v0.0.5) (2024-02-07)
+
+
+### Bug Fixes
+
+* move main one step up ([30ec926](https://github.com/oktayalizada/flight-search/commit/30ec9268bea9da202af8f46cccebc0a8b5c383ce))
+
 ## [0.0.4](https://github.com/oktayalizada/flight-search/compare/v0.0.3...v0.0.4) (2024-02-07)
 
 
