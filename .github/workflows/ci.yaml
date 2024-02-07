@@ -13,7 +13,7 @@ on:
 
 jobs:
   release:
-    if: github.ref == 'refs/heads/main' && startsWith(github.event.head_commit.message, 'bump')
+    if: github.ref == 'refs/heads/main' && (startsWith(github.event.head_commit.message, 'bump')  || startsWith(github.ref, 'refs/tags/v'))
     runs-on: ubuntu-latest
     steps:
       - uses: google-github-actions/release-please-action@v4
