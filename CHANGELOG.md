@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.2](https://github.com/oktayalizada/flight-search/compare/v0.0.1...v0.0.2) (2024-02-07)
+
+
+### Bug Fixes
+
+* test skip-github-pull request true ([da6084a](https://github.com/oktayalizada/flight-search/commit/da6084ac8a2fd3deb6dfe0e6788ae6cd4b318185))
+
 ## [0.0.1](https://github.com/oktayalizada/flight-search/compare/v0.0.1...v0.0.1) (2024-02-07)
 
 
