@@ -13,6 +13,7 @@ var (
 	e   *echo.Echo
 	baseUrl="/api/v1"
 )
+
 func main() {
 	db.InitializeDb()
 	db.GetDbConfig().GetDB()
