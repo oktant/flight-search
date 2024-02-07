@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.0.3](https://github.com/oktayalizada/flight-search/compare/v0.0.2...v0.0.3) (2024-02-07)
+
+
+### Bug Fixes
+
+* imports and change module name ([79bd2f9](https://github.com/oktayalizada/flight-search/commit/79bd2f9b89571699710cf60fee3fb0f6cc1ac3cb))
+* upgrade libraries for vulnerabilities ([47002da](https://github.com/oktayalizada/flight-search/commit/47002dab1addf0ca21b89b97ffe7e553c9c2040d))
+* uuid update to google uuid ([396a683](https://github.com/oktayalizada/flight-search/commit/396a683d80a7b315f377eb01b6db4c8a8468cf66))
+
 ## [0.0.2](https://github.com/oktayalizada/flight-search/compare/v0.0.1...v0.0.2) (2024-02-07)
 
 
