@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.4](https://github.com/oktayalizada/flight-search/compare/v0.0.3...v0.0.4) (2024-02-07)
+
+
+### Bug Fixes
+
+* upgrade gorm ([80facc2](https://github.com/oktayalizada/flight-search/commit/80facc24f03876556d15664d4cb10470eacb1587))
+
 ## [0.0.3](https://github.com/oktayalizada/flight-search/compare/v0.0.2...v0.0.3) (2024-02-07)
 
 
