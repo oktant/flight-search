@@ -1,25 +1,25 @@
 package dao
 
 import (
+	"flight-search/db"
+	"flight-search/models"
+	"github.com/google/uuid"
 	"github.com/jinzhu/gorm"
-	"github.com/satori/go.uuid"
-	"github.com/srinivasvinay/flight-search/db"
-	"github.com/srinivasvinay/flight-search/models"
 )
 
 type GormDatabase struct {
-	Gorm      *gorm.DB
+	Gorm *gorm.DB
 }
 
-func (database *GormDatabase) GetAllFlights() * []models.Flight{
+func (database *GormDatabase) GetAllFlights() *[]models.Flight {
 	flights := new([]models.Flight)
 	db.GetDbConfig().GetDB().Find(flights)
 
 	return flights
 }
 
-func (database *GormDatabase) CreateNewFlight(flight *models.Flight) *models.Flight{
-	flight.Id = uuid.NewV4().String()
+func (database *GormDatabase) CreateNewFlight(flight *models.Flight) *models.Flight {
+	flight.Id = uuid.New()
 
 	db.GetDbConfig().GetDB().Create(flight)
 
@@ -27,25 +27,25 @@ func (database *GormDatabase) CreateNewFlight(flight *models.Flight) *models.Fli
 }
 
 func (database *GormDatabase) CreateBooking(booking *models.Booking) *models.Booking {
-	booking.Id = uuid.NewV4().String()
+	booking.Id = uuid.New()
 
 	db.GetDbConfig().GetDB().Create(booking)
 
 	return booking
 }
 
-func (database *GormDatabase) GetBookings() * []models.Booking{
+func (database *GormDatabase) GetBookings() *[]models.Booking {
 	booking := new([]models.Booking)
 	db.GetDbConfig().GetDB().Find(booking)
 	return booking
 }
 
-func (database *GormDatabase) GetBooking(bookId string) *models.Booking{
+func (database *GormDatabase) GetBooking(bookId string) *models.Booking {
 	booking := new(models.Booking)
 	flight := new(models.Flight)
 	db.GetDbConfig().GetDB().Where("id = ?", bookId).Find(booking)
 	db.GetDbConfig().GetDB().Model(booking).Related(flight)
-	booking.Flight=flight
+	booking.Flight = flight
 	return booking
 }
 
