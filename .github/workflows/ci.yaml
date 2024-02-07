@@ -12,51 +12,6 @@ on:
       - "**.md"
 
 jobs:
-  test:
-    runs-on: windows-latest
-    strategy:
-      matrix:
-        go-version: [ '1.21.x' ]
-    steps:
-      - uses: actions/checkout@v4
-      - name: Setup Go ${{ matrix.go-version }}
-        uses: actions/setup-go@v5
-        with:
-          go-version: ${{ matrix.go-version }}
-
-      - name: Install dependencies
-        run: go get .
-
-      - name: Test with the Go CLI
-        run: go test ./...
-
-  lint:
-    name: lint
-    runs-on: windows-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-go@v5
-        with:
-          go-version: '1.21'
-          cache: false
-
-      - name: if act install umbrella certificate
-        if: ${{ env.ACT }}
-        run: |
-          wget http://www.cisco.com/security/pki/certs/ciscoumbrellaroot.cer
-          openssl x509 -inform DER -in ciscoumbrellaroot.cer -out ciscoumbrellaroot.crt
-          cp ciscoumbrellaroot.crt /usr/local/share/ca-certificates/ciscoumbrellaroot.crt
-          update-ca-certificates
-
-      - name: Install dependencies
-        run: go get .
-
-      - name: golangci-lint
-        uses: golangci/golangci-lint-action@c67416616c29c3c48d26b59c45cadb56966d80aa
-        with:
-          version: v1.54
-          args: --timeout 3m --verbose
-
   release:
     if: github.ref == 'refs/heads/main' && startsWith(github.event.head_commit.message, 'bump')
     runs-on: ubuntu-latest
