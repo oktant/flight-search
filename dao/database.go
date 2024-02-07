@@ -1,6 +1,6 @@
 package dao
 
-import "github.com/srinivasvinay/flight-search/models"
+import "flight-search/models"
 
 type GormAccessDatabase interface {
 	GetAllFlights() *[]models.Flight

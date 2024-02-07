@@ -1,17 +1,17 @@
 package main
 
 import (
+	"flight-search/db"
+	"flight-search/handlers"
+	"flight-search/middleware"
 	"github.com/labstack/echo/v4"
-     echoMiddleware "github.com/labstack/echo/v4/middleware"
-	"github.com/srinivasvinay/flight-search/db"
-	"github.com/srinivasvinay/flight-search/handlers"
-	"github.com/srinivasvinay/flight-search/middleware"
-	 netHttp "net/http"
-	)
+	echoMiddleware "github.com/labstack/echo/v4/middleware"
+	netHttp "net/http"
+)
 
 var (
-	e   *echo.Echo
-	baseUrl="/api/v1"
+	e       *echo.Echo
+	baseUrl = "/api/v1"
 )
 
 func main() {

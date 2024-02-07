@@ -1,9 +1,9 @@
 package handlers
 
 import (
+	"flight-search/dao"
+	"flight-search/models"
 	"github.com/labstack/echo/v4"
-	"github.com/srinivasvinay/flight-search/dao"
-	"github.com/srinivasvinay/flight-search/models"
 	"net/http"
 )
 
@@ -23,7 +23,6 @@ func CreateFlight(c echo.Context) (err error) {
 	if err = c.Bind(flight); err != nil {
 		return echo.NewHTTPError(http.StatusOK, "can't bind")
 	}
-
 	return c.JSON(http.StatusOK, da.CreateNewFlight(flight))
 }
 

@@ -1,10 +1,10 @@
 package db
 
 import (
+	"flight-search/models"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/postgres"
 	"github.com/labstack/gommon/log"
-	"github.com/srinivasvinay/flight-search/models"
 )
 
 var ConfigInstance Config
@@ -13,6 +13,7 @@ var DB *gorm.DB
 type Database struct {
 	*gorm.DB
 }
+
 func SetDbConfig(inst Config) {
 	ConfigInstance = inst
 }
