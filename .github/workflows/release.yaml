@@ -16,6 +16,6 @@ jobs:
     steps:
       - uses: google-github-actions/release-please-action@v4
         with:
-          token: "${{ secrets.GITHUB_TOKEN  }}"
+          token: "${{ secrets.FLIGHT_SEARCH_TOKEN  }}"
           manifest-file: .release-please-manifest.json
           config-file: release-please-config.json
