@@ -19,9 +19,6 @@ type Database struct {
 func SetDbConfig(inst Config) {
 	ConfigInstance = inst
 }
-func GetDbConfig() Config {
-	return ConfigInstance
-}
 
 func (d *Database) InitializeDatabase() (*gorm.DB, error) {
 	db, err := gorm.Open(postgres.Open(connectionString()), &gorm.Config{})
