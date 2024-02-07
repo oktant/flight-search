@@ -9,18 +9,9 @@ import (
 	"os"
 )
 
-var ConfigInstance Config
 var DB *gorm.DB
 
-type Database struct {
-	*gorm.DB
-}
-
-func SetDbConfig(inst Config) {
-	ConfigInstance = inst
-}
-
-func (d *Database) InitializeDatabase() (*gorm.DB, error) {
+func InitializeDatabase() (*gorm.DB, error) {
 	db, err := gorm.Open(postgres.Open(connectionString()), &gorm.Config{})
 	if err != nil {
 		log.Errorf("db err: %+v", err)
@@ -32,9 +23,9 @@ func (d *Database) InitializeDatabase() (*gorm.DB, error) {
 	return DB, nil
 }
 
-func (d *Database) GetDB() *gorm.DB {
+func GetDB() *gorm.DB {
 	if DB == nil {
-		_, err := d.InitializeDatabase()
+		_, err := InitializeDatabase()
 		if err != nil {
 			log.Errorf("db err: %+v", err)
 			return nil

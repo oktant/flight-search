@@ -15,7 +15,7 @@ var (
 )
 
 func main() {
-	db.InitializeDb()
+	db.GetDB()
 	e := echo.New()
 	generalGroup := e.Group(baseUrl)
 	e.Use(echoMiddleware.CORSWithConfig(echoMiddleware.CORSConfig{
