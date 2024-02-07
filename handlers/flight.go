@@ -27,7 +27,6 @@ func CreateFlight(c echo.Context) (err error) {
 }
 
 func GetBookings(c echo.Context) (err error) {
-
 	return c.JSON(http.StatusOK, da.GetBookings())
 }
 
