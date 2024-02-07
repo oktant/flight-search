@@ -4,7 +4,7 @@ import (
 	"flight-search/db"
 	"flight-search/models"
 	"github.com/google/uuid"
-	"github.com/jinzhu/gorm"
+	"gorm.io/gorm"
 )
 
 type GormDatabase struct {
@@ -44,8 +44,8 @@ func (database *GormDatabase) GetBooking(bookId string) *models.Booking {
 	booking := new(models.Booking)
 	flight := new(models.Flight)
 	db.GetDbConfig().GetDB().Where("id = ?", bookId).Find(booking)
-	db.GetDbConfig().GetDB().Model(booking).Related(flight)
-	booking.Flight = flight
+
+	booking.Flight = *flight
 	return booking
 }
 

@@ -1,6 +1,9 @@
 package models
 
-import "github.com/google/uuid"
+import (
+	"github.com/google/uuid"
+	"gorm.io/gorm"
+)
 
 type Flight struct {
 	Id              uuid.UUID `gorm:"primary_key" json:"id"`
@@ -12,8 +15,9 @@ type Flight struct {
 }
 
 type Booking struct {
+	gorm.Model
 	Id       uuid.UUID `gorm:"primary_key" json:"id"`
 	Username string    `json:"username"`
 	FlightId string    `json:"flightId"`
-	Flight   *Flight   `json:"flight,omitempty"`
+	Flight   Flight    `gorm:"constraint:OnUpdate:CASCADE,OnDelete:SET NULL;" json:"flight,omitempty"`
 }
