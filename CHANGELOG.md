@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.2](https://github.com/oktayalizada/flight-search/compare/v0.0.1...v0.0.2) (2024-02-07)
+
+
+### Bug Fixes
+
+* remove unnecessary function in dbconfig_impl.go ([a8e96e2](https://github.com/oktayalizada/flight-search/commit/a8e96e27be710da38ca324d1cfe6a0a735d6401d))
+
 ## [0.0.1](https://github.com/oktayalizada/flight-search/compare/v0.0.1...v0.0.1) (2024-02-07)
 
 
