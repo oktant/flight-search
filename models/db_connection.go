@@ -3,6 +3,7 @@ package models
 import (
 	"bytes"
 )
+
 type DbConnection struct {
 	host     string
 	port     string
@@ -11,6 +12,7 @@ type DbConnection struct {
 	password string
 	sslMode  string
 }
+
 func (connection *DbConnection) New() *DbConnection {
 	connection = &DbConnection{
 		host:     "your-host-name",
@@ -22,6 +24,7 @@ func (connection *DbConnection) New() *DbConnection {
 	}
 	return connection
 }
+
 func (connection DbConnection) GetConnection() string {
 	var buffer bytes.Buffer
 	buffer.WriteString("host=")
