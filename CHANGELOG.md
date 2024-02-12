@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.5](https://github.com/oktayalizada/flight-search/compare/v0.0.4...v0.0.5) (2024-02-12)
+
+
+### Bug Fixes
+
+* ci add actions/checkout4 ([c3a93eb](https://github.com/oktayalizada/flight-search/commit/c3a93eb2c1c32c1c98bce6ef93ddc3d03073824e))
+
 ## [0.0.4](https://github.com/oktayalizada/flight-search/compare/v0.0.3...v0.0.4) (2024-02-12)
 
 
