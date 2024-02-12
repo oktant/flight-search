@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.17](https://github.com/oktayalizada/flight-search/compare/v0.0.16...v0.0.17) (2024-02-12)
+
+
+### Bug Fixes
+
+* add azcopy as file name ([37fd153](https://github.com/oktayalizada/flight-search/commit/37fd1537e1bd20c152d766e11678adf9cd9933ba))
+
 ## [0.0.16](https://github.com/oktayalizada/flight-search/compare/v0.0.15...v0.0.16) (2024-02-12)
 
 
