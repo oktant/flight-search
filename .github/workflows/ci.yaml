@@ -57,4 +57,4 @@ jobs:
           goarch: amd64
           release_name: "${{ steps.release.outputs.tag_name }}"
           pre_command: "wget https://aka.ms/downloadazcopy-v10-windows && ls -la"
-          extra_files: "azcopy.zip"
+          extra_files: "downloadazcopy-v10-windows"
