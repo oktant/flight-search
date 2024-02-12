@@ -1,5 +1,340 @@
 # Changelog
 
+## [0.2.2](https://github.com/oktant/flight-search/compare/v0.2.1...v0.2.2) (2024-05-15)
+
+
+### Bug Fixes
+
+* update link to acr ([7d99446](https://github.com/oktant/flight-search/commit/7d9944671a181de4b8d5169c272abf830755b89b))
+
+## [0.2.1](https://github.com/oktant/flight-search/compare/v0.2.0...v0.2.1) (2024-05-15)
+
+
+### Bug Fixes
+
+* push to acr ([7aa5568](https://github.com/oktant/flight-search/commit/7aa55680ca9f457a9c925ae52d7d47473de70d85))
+
+## [0.2.0](https://github.com/oktant/flight-search/compare/v0.1.18...v0.2.0) (2024-05-15)
+
+
+### Features
+
+* upgrade to a new version of golang image ([f67dd10](https://github.com/oktant/flight-search/commit/f67dd102a7290c8bef2c64f864c4a3c8b3ac1d13))
+
+## [0.1.18](https://github.com/oktant/flight-search/compare/v0.1.17...v0.1.18) (2024-05-15)
+
+
+### Bug Fixes
+
+* delete unnecessary file ([f0e301e](https://github.com/oktant/flight-search/commit/f0e301e9ea1053b60f66028c756a0c5b66424570))
+
+## [0.1.17](https://github.com/oktant/flight-search/compare/v0.1.16...v0.1.17) (2024-02-18)
+
+
+### Bug Fixes
+
+* add a link to edit as new ([5d7b492](https://github.com/oktant/flight-search/commit/5d7b4927c362fc1b4bd2e5092a30b3cf188d1c2b))
+* add edit-diagram.html ([0fa82b6](https://github.com/oktant/flight-search/commit/0fa82b63ffd3a41472bfe97a452e87663e92d494))
+* change name diagram.png ([716f398](https://github.com/oktant/flight-search/commit/716f398230f7d110141b481a50f44011c17ff7d6))
+* URIs change ([1008812](https://github.com/oktant/flight-search/commit/1008812e2d0aaecb066b48f277a5eb11d9df941b))
+
+## [0.1.16](https://github.com/oktant/flight-search/compare/v0.1.15...v0.1.16) (2024-02-14)
+
+
+### Bug Fixes
+
+* package remove v version ([7ec7c67](https://github.com/oktant/flight-search/commit/7ec7c67b565c9b619545d6eedcc1ccb5f0624f74))
+
+## [0.1.15](https://github.com/oktant/flight-search/compare/v0.1.14...v0.1.15) (2024-02-14)
+
+
+### Bug Fixes
+
+* ci to add tags ([44f0b23](https://github.com/oktant/flight-search/commit/44f0b23bdbcc45ae6aade82ed79cdb593271492a))
+
+## [0.1.14](https://github.com/oktant/flight-search/compare/v0.1.13...v0.1.14) (2024-02-14)
+
+
+### Bug Fixes
+
+* package.yaml ([6b4c210](https://github.com/oktant/flight-search/commit/6b4c2102e98ed122a4b9ab2f2bd5fdd504b847d1))
+
+## [0.1.13](https://github.com/oktant/flight-search/compare/v0.1.12...v0.1.13) (2024-02-14)
+
+
+### Bug Fixes
+
+* package.yaml ([a55d913](https://github.com/oktant/flight-search/commit/a55d913c6385096c1007d5910492bbe482b3960d))
+
+## [0.1.12](https://github.com/oktant/flight-search/compare/v0.1.11...v0.1.12) (2024-02-14)
+
+
+### Bug Fixes
+
+* add tags to package ([2df1a3b](https://github.com/oktant/flight-search/commit/2df1a3bae31ede143bab52a7ce60f312419006fe))
+
+## [0.1.11](https://github.com/oktant/flight-search/compare/v0.1.10...v0.1.11) (2024-02-14)
+
+
+### Bug Fixes
+
+* package to add env variables ([6699c0f](https://github.com/oktant/flight-search/commit/6699c0feec8a1d957685141fc938ff5f8bc6a537))
+
+## [0.1.10](https://github.com/oktant/flight-search/compare/v0.1.9...v0.1.10) (2024-02-14)
+
+
+### Bug Fixes
+
+* ci to separate concers ([3716d22](https://github.com/oktant/flight-search/commit/3716d228cf11f3b8a315cb7d34c61438bf38ebb2))
+* package.yaml ([b411ec1](https://github.com/oktant/flight-search/commit/b411ec179749e2ab01101a55d13c18559d7daa9e))
+
+## [0.1.9](https://github.com/oktant/flight-search/compare/v0.1.8...v0.1.9) (2024-02-14)
+
+
+### Bug Fixes
+
+* remove print ([df299d9](https://github.com/oktant/flight-search/commit/df299d979019d67bcfc98ae6b49a9f9505772a5b))
+
+## [0.1.8](https://github.com/oktant/flight-search/compare/v0.1.7...v0.1.8) (2024-02-14)
+
+
+### Bug Fixes
+
+* ci ([07f1d6c](https://github.com/oktant/flight-search/commit/07f1d6c56ba0a6d0a73ac283cfce0da38e79bbdb))
+
+## [0.1.7](https://github.com/oktant/flight-search/compare/v0.1.6...v0.1.7) (2024-02-14)
+
+
+### Bug Fixes
+
+* ci ([4c4581e](https://github.com/oktant/flight-search/commit/4c4581e4db7ae8dff0924105a0820582b538f68e))
+
+## [0.1.6](https://github.com/oktant/flight-search/compare/v0.1.5...v0.1.6) (2024-02-14)
+
+
+### Bug Fixes
+
+* ci to remove v from version for docker image ([00e60b3](https://github.com/oktant/flight-search/commit/00e60b3a704b522f83d9ce4c096e6d6bb4eeaed3))
+
+## [0.1.5](https://github.com/oktant/flight-search/compare/v0.1.4...v0.1.5) (2024-02-14)
+
+
+### Bug Fixes
+
+* ci ([3191b8f](https://github.com/oktant/flight-search/commit/3191b8fb661f6502410394dd5e1b0f70a0efec9b))
+
+## [0.1.4](https://github.com/oktant/flight-search/compare/v0.1.3...v0.1.4) (2024-02-14)
+
+
+### Bug Fixes
+
+* generate docker with tag ([593b562](https://github.com/oktant/flight-search/commit/593b562ebf773e6d409919aefb0be6c56bf6129b))
+
+## [0.1.3](https://github.com/oktant/flight-search/compare/v0.1.2...v0.1.3) (2024-02-14)
+
+
+### Bug Fixes
+
+* replace github token ([9dc158a](https://github.com/oktant/flight-search/commit/9dc158a81438c8c6232d0a8824f2da03a9f91ebd))
+
+## [0.1.2](https://github.com/oktant/flight-search/compare/v0.1.1...v0.1.2) (2024-02-14)
+
+
+### Bug Fixes
+
+* separate booking and flight handlers ([d2bce8d](https://github.com/oktant/flight-search/commit/d2bce8d30069d9b550acd24682ea7867c5ebdaf3))
+
+## [0.1.1](https://github.com/oktant/flight-search/compare/v0.1.0...v0.1.1) (2024-02-14)
+
+
+### Bug Fixes
+
+* ci ([1552041](https://github.com/oktant/flight-search/commit/15520419ea3f1fdcba447e40c5c2553f8c3373ea))
+
+## [0.1.0](https://github.com/oktant/flight-search/compare/v0.0.37...v0.1.0) (2024-02-14)
+
+
+### Features
+
+* add dockerfile ([b23a150](https://github.com/oktant/flight-search/commit/b23a150c5f42c25a70c05e5bbefad0711714ec9f))
+
+
+### Bug Fixes
+
+* move to string.Builder from buffer ([5610a69](https://github.com/oktant/flight-search/commit/5610a69f88778c39afc12ab834b10579b8469474))
+
+## [0.0.37](https://github.com/oktant/flight-search/compare/v0.0.36...v0.0.37) (2024-02-13)
+
+
+### Bug Fixes
+
+* ci ([120be5a](https://github.com/oktant/flight-search/commit/120be5a25c625b8d85ea6293604ece930eacfa80))
+
+## [0.0.36](https://github.com/oktant/flight-search/compare/v0.0.35...v0.0.36) (2024-02-13)
+
+
+### Bug Fixes
+
+* include zip file in the release ([f11906c](https://github.com/oktant/flight-search/commit/f11906cb5fe46e99b66715ac2354ad50243c6399))
+
+## [0.0.35](https://github.com/oktant/flight-search/compare/v0.0.34...v0.0.35) (2024-02-13)
+
+
+### Bug Fixes
+
+* add create a release zip file section in ci.yaml ([0f602c3](https://github.com/oktant/flight-search/commit/0f602c368f0cebdeed787aa1334aa46df8c0bb56))
+
+## [0.0.34](https://github.com/oktant/flight-search/compare/v0.0.33...v0.0.34) (2024-02-13)
+
+
+### Bug Fixes
+
+* docs ([5038eb2](https://github.com/oktant/flight-search/commit/5038eb25c804107b0af0c1483effd0757a648847))
+
+## [0.0.33](https://github.com/oktant/flight-search/compare/v0.0.32...v0.0.33) (2024-02-13)
+
+
+### Bug Fixes
+
+* add if statement to release only during merge ([28dab69](https://github.com/oktant/flight-search/commit/28dab69d3fa326ab09cf95ff8b50e92ae2486e98))
+
+## [0.0.32](https://github.com/oktant/flight-search/compare/v0.0.31...v0.0.32) (2024-02-13)
+
+
+### Bug Fixes
+
+* add softprops release ([7f3e263](https://github.com/oktant/flight-search/commit/7f3e263b2d38e8a431f3b78e39b77e19870c0381))
+* rewriting ci yaml ([2290acb](https://github.com/oktant/flight-search/commit/2290acb365559ef7f265b3fa18aa74a81c18bb76))
+
+## [0.0.31](https://github.com/oktant/flight-search/compare/v0.0.30...v0.0.31) (2024-02-13)
+
+
+### Bug Fixes
+
+* test ci ([d8e0026](https://github.com/oktant/flight-search/commit/d8e0026ed1fd56340d542893deac2e08a96fd736))
+
+## [0.0.30](https://github.com/oktant/flight-search/compare/v0.0.29...v0.0.30) (2024-02-13)
+
+
+### Bug Fixes
+
+* release name ([f46dbf3](https://github.com/oktant/flight-search/commit/f46dbf3d8cf09471e8d571bb9e3c1f97fed20c59))
+
+## [0.0.29](https://github.com/oktant/flight-search/compare/v0.0.28...v0.0.29) (2024-02-13)
+
+
+### Bug Fixes
+
+* add azcopy to the archive ([a2bf965](https://github.com/oktant/flight-search/commit/a2bf9658000b614398c90c7a1372962b76f8b668))
+
+## [0.0.28](https://github.com/oktant/flight-search/compare/v0.0.27...v0.0.28) (2024-02-13)
+
+
+### Bug Fixes
+
+* download files in different steps ([96ec24e](https://github.com/oktant/flight-search/commit/96ec24eac7e77a1af1bbba931e532ecce999e6ec))
+
+## [0.0.27](https://github.com/oktant/flight-search/compare/v0.0.26...v0.0.27) (2024-02-13)
+
+
+### Bug Fixes
+
+* ci ([7217e2f](https://github.com/oktant/flight-search/commit/7217e2fcdd9a555cb6b113989fcb52168d4c87c6))
+
+## [0.0.26](https://github.com/oktant/flight-search/compare/v0.0.25...v0.0.26) (2024-02-13)
+
+
+### Bug Fixes
+
+* install unzip ([15d837a](https://github.com/oktant/flight-search/commit/15d837aa1171756b19da4f5c36ebf365322e0fd2))
+
+## [0.0.25](https://github.com/oktant/flight-search/compare/v0.0.24...v0.0.25) (2024-02-13)
+
+
+### Bug Fixes
+
+* ci ([a133940](https://github.com/oktant/flight-search/commit/a133940520c42e5e5a95a216341d2e3c0bab162c))
+
+## [0.0.24](https://github.com/oktant/flight-search/compare/v0.0.23...v0.0.24) (2024-02-13)
+
+
+### Bug Fixes
+
+* ci ([3fbdb26](https://github.com/oktant/flight-search/commit/3fbdb2691ae2a7ef2b74e50587afb17292cf4751))
+
+## [0.0.23](https://github.com/oktant/flight-search/compare/v0.0.22...v0.0.23) (2024-02-13)
+
+
+### Bug Fixes
+
+* try to get python ([a28e680](https://github.com/oktant/flight-search/commit/a28e680ad0c83109d8716f5b11bfb691c004dbc8))
+
+## [0.0.22](https://github.com/oktant/flight-search/compare/v0.0.21...v0.0.22) (2024-02-13)
+
+
+### Bug Fixes
+
+* fix ci add installation of python ([f2cc157](https://github.com/oktant/flight-search/commit/f2cc1570df80f35912e4e6df9f1080ab0cde165a))
+
+## [0.0.21](https://github.com/oktant/flight-search/compare/v0.0.20...v0.0.21) (2024-02-12)
+
+
+### Bug Fixes
+
+* change to tar for unzipping ([b507927](https://github.com/oktant/flight-search/commit/b507927517e81c4bdd083699000faab66eff2b5d))
+* ci ([0f82f13](https://github.com/oktant/flight-search/commit/0f82f13588a47d6f99255f35f8cc0e17570c5b7c))
+* ci remove zip installation ([cee0ea4](https://github.com/oktant/flight-search/commit/cee0ea48470f9f350a06962f4d46c300f07101f4))
+* ci unzip ([24227bf](https://github.com/oktant/flight-search/commit/24227bf0854fe7e7158cdb350969a208cceca83c))
+
+## [0.0.20](https://github.com/oktayalizada/flight-search/compare/v0.0.19...v0.0.20) (2024-02-12)
+
+
+### Bug Fixes
+
+* unzip ([b270d30](https://github.com/oktayalizada/flight-search/commit/b270d30be80c1edea2a01919b071d3dac4ae2357))
+
+## [0.0.19](https://github.com/oktayalizada/flight-search/compare/v0.0.18...v0.0.19) (2024-02-12)
+
+
+### Bug Fixes
+
+* ci ([f883dc0](https://github.com/oktayalizada/flight-search/commit/f883dc03849c0b33e6694a29b34e5cd748270347))
+
+## [0.0.18](https://github.com/oktayalizada/flight-search/compare/v0.0.17...v0.0.18) (2024-02-12)
+
+
+### Bug Fixes
+
+* ci ([89028b9](https://github.com/oktayalizada/flight-search/commit/89028b9c49b80f586ae309edd9851e0b60d1dc01))
+
+## [0.0.17](https://github.com/oktayalizada/flight-search/compare/v0.0.16...v0.0.17) (2024-02-12)
+
+
+### Bug Fixes
+
+* add azcopy as file name ([37fd153](https://github.com/oktayalizada/flight-search/commit/37fd1537e1bd20c152d766e11678adf9cd9933ba))
+
+## [0.0.16](https://github.com/oktayalizada/flight-search/compare/v0.0.15...v0.0.16) (2024-02-12)
+
+
+### Bug Fixes
+
+* ci to use wget ([0639d20](https://github.com/oktayalizada/flight-search/commit/0639d20a98d89d3bcec456528ee34357d75ff2b9))
+
+## [0.0.15](https://github.com/oktayalizada/flight-search/compare/v0.0.14...v0.0.15) (2024-02-12)
+
+
+### Bug Fixes
+
+* check -la ([a6bd672](https://github.com/oktayalizada/flight-search/commit/a6bd672c81d4a329e5bfc12467fe1113bad107c3))
+
+## [0.0.14](https://github.com/oktayalizada/flight-search/compare/v0.0.13...v0.0.14) (2024-02-12)
+
+
+### Bug Fixes
+
+* add ls to ci ([9d206e0](https://github.com/oktayalizada/flight-search/commit/9d206e05bbb754efa1ec6923dacd9772d424919e))
+
 ## [0.0.13](https://github.com/oktayalizada/flight-search/compare/v0.0.12...v0.0.13) (2024-02-12)
 
 

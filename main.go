@@ -16,7 +16,7 @@ var (
 
 func main() {
 	db.GetDB()
-	e := echo.New()
+	e = echo.New()
 	generalGroup := e.Group(baseUrl)
 	e.Use(echoMiddleware.CORSWithConfig(echoMiddleware.CORSConfig{
 		AllowOrigins: []string{"*"},
