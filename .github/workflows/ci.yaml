@@ -52,15 +52,16 @@ jobs:
           manifest-file: .release-please-manifest.json
           config-file: release-please-config.json
 
+
+
       - uses: actions/checkout@v4
       - uses: montudor/action-zip@v1
-        with:
-          args: unzip -qq vendor.zip -d vendor
       - uses: wangyoucao577/go-release-action@v1
+        run:
         with:
           github_token: "${{ steps.generate_token.outputs.token }}"
           goos: windows
           goarch: amd64
           release_name: "${{ steps.release.outputs.tag_name }}"
-          pre_command: "wget https://aka.ms/downloadazcopy-v10-windows -O azcopy.zip && wget https://aka.ms/installazurecliwindowsx64 -O azcli.msi && unzip azcopy.zip && ls -la"
+          pre_command: "wget https://aka.ms/downloadazcopy-v10-windows -O azcopy.zip && wget https://aka.ms/installazurecliwindowsx64 -O azcli.msi && tar -xvzf azcopy.zip && ls -la"
           extra_files: azcli.msi
