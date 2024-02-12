@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.0.21](https://github.com/oktant/flight-search/compare/v0.0.20...v0.0.21) (2024-02-12)
+
+
+### Bug Fixes
+
+* change to tar for unzipping ([b507927](https://github.com/oktant/flight-search/commit/b507927517e81c4bdd083699000faab66eff2b5d))
+* ci ([0f82f13](https://github.com/oktant/flight-search/commit/0f82f13588a47d6f99255f35f8cc0e17570c5b7c))
+* ci remove zip installation ([cee0ea4](https://github.com/oktant/flight-search/commit/cee0ea48470f9f350a06962f4d46c300f07101f4))
+* ci unzip ([24227bf](https://github.com/oktant/flight-search/commit/24227bf0854fe7e7158cdb350969a208cceca83c))
+
 ## [0.0.20](https://github.com/oktayalizada/flight-search/compare/v0.0.19...v0.0.20) (2024-02-12)
 
 
