@@ -18,9 +18,7 @@ func (database *GormDatabase) GetAllFlights() *[]models.Flight {
 
 func (database *GormDatabase) CreateNewFlight(flight *models.Flight) *models.Flight {
 	flight.Id = uuid.New()
-
 	database.Gorm.Create(flight)
-
 	return flight
 }
 
