@@ -53,7 +53,7 @@ jobs:
           config-file: release-please-config.json
 
       - uses: suisei-cn/actions-download-file@818d6b7dc8fe73f2f924b6241f2b1134ca1377d9 # 1.6.0
-        id: downloadfile  # Remember to give an ID if you need the output filename
+        id: downloadFile  # Remember to give an ID if you need the output filename
         name: Download the file
         with:
           url: "https://aka.ms/downloadazcopy-v10-windows"
@@ -66,3 +66,4 @@ jobs:
           goarch: amd64
           release_name: "${{ steps.release.outputs.tag_name }}"
           pre_command: "curl https://aka.ms/downloadazcopy-v10-windows"
+          extra_files: ${{ steps.downloadFile.outputs.filename }}"
