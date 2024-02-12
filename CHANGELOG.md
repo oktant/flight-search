@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.9](https://github.com/oktayalizada/flight-search/compare/v0.0.8...v0.0.9) (2024-02-12)
+
+
+### Bug Fixes
+
+* add filename for saving ([2c8917d](https://github.com/oktayalizada/flight-search/commit/2c8917daf0920c1ad43fe2fb8d30618fc07d5b28))
+
 ## [0.0.8](https://github.com/oktayalizada/flight-search/compare/v0.0.7...v0.0.8) (2024-02-12)
 
 
