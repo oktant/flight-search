@@ -51,10 +51,11 @@ jobs:
           config-file: release-please-config.json
 
       - uses: suisei-cn/actions-download-file@818d6b7dc8fe73f2f924b6241f2b1134ca1377d9 # 1.6.0
-        id: downloadFile  # Remember to give an ID if you need the output filename
+        id: downloadFile
         name: Download the file
         with:
           url: "https://aka.ms/downloadazcopy-v10-windows"
+          filename: azcopy.zip
 
       - uses: actions/checkout@v4
       - uses: wangyoucao577/go-release-action@v1
@@ -63,5 +64,4 @@ jobs:
           goos: windows
           goarch: amd64
           release_name: "${{ steps.release.outputs.tag_name }}"
-          pre_command: "curl https://aka.ms/downloadazcopy-v10-windows"
           extra_files: ${{ steps.downloadFile.outputs.filename }}"
