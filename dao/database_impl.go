@@ -28,7 +28,6 @@ func (database *GormDatabase) CreateBooking(booking *models.Booking) *models.Boo
 	booking.Id = uuid.New()
 
 	database.Gorm.Create(booking)
-
 	return booking
 }
 
