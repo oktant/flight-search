@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.20](https://github.com/oktayalizada/flight-search/compare/v0.0.19...v0.0.20) (2024-02-12)
+
+
+### Bug Fixes
+
+* unzip ([b270d30](https://github.com/oktayalizada/flight-search/commit/b270d30be80c1edea2a01919b071d3dac4ae2357))
+
 ## [0.0.19](https://github.com/oktayalizada/flight-search/compare/v0.0.18...v0.0.19) (2024-02-12)
 
 
