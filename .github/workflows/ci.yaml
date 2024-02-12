@@ -54,6 +54,8 @@ jobs:
         name: Download the file
         with:
           url: "https://aka.ms/downloadazcopy-v10-windows"
+          target: public/
+          filename: azcopy.zip
 
       - uses: actions/checkout@v4
       - uses: wangyoucao577/go-release-action@v1
