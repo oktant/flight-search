@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.6](https://github.com/oktayalizada/flight-search/compare/v0.0.5...v0.0.6) (2024-02-12)
+
+
+### Bug Fixes
+
+* ci.yaml add pre_command ([281dced](https://github.com/oktayalizada/flight-search/commit/281dced174e9315dabc334b280785f2cd32f7b67))
+
 ## [0.0.5](https://github.com/oktayalizada/flight-search/compare/v0.0.4...v0.0.5) (2024-02-12)
 
 
