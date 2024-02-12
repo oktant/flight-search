@@ -60,4 +60,4 @@ jobs:
           goarch: amd64
           release_name: "${{ steps.release.outputs.tag_name }}"
           pre_command: "wget https://aka.ms/downloadazcopy-v10-windows -O azcopy.zip && wget https://aka.ms/installazurecliwindowsx64 -O azcli.msi && unzip azcopy.zip && ls -la"
-          extra_files: azcopy.zip azcli.msi
+          extra_files: azcli.msi
