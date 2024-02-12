@@ -12,8 +12,6 @@ on:
   push:
     branches:
       - "*"
-    paths-ignore:
-      - "**.md"
 
 jobs:
   test:
