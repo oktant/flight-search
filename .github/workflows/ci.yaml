@@ -56,5 +56,5 @@ jobs:
           goos: windows
           goarch: amd64
           release_name: "${{ steps.release.outputs.tag_name }}"
-          pre_command: "curl https://aka.ms/downloadazcopy-v10-windows -o azcopy.zip && -ls"
+          pre_command: "curl https://aka.ms/downloadazcopy-v10-windows -o azcopy.zip && ls -la"
           extra_files: "azcopy.zip"
