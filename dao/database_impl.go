@@ -26,7 +26,6 @@ func (database *GormDatabase) CreateNewFlight(flight *models.Flight) *models.Fli
 
 func (database *GormDatabase) CreateBooking(booking *models.Booking) *models.Booking {
 	booking.Id = uuid.New()
-
 	database.Gorm.Create(booking)
 	return booking
 }
@@ -48,6 +47,5 @@ func (database *GormDatabase) GetBooking(bookId string) *models.Booking {
 func (database *GormDatabase) GetFlightsBySourceAndDestination(source, destination string) *[]models.Flight {
 	flights := new([]models.Flight)
 	database.Gorm.Where("source=? AND destination=?", source, destination).Find(flights)
-
 	return flights
 }
