@@ -46,7 +46,15 @@ jobs:
             private-key: ${{ secrets.APP_PEM }}
 
       - uses: google-github-actions/release-please-action@v4
+        id: release
         with:
           token: "${{ steps.generate_token.outputs.token }}"
           manifest-file: .release-please-manifest.json
           config-file: release-please-config.json
+
+      - uses: wangyoucao577/go-release-action@v1
+        with:
+          token: "${{ steps.generate_token.outputs.token }}"
+          goos: windows
+          goarch: amd64
+          release_name: "${{ steps.release.outputs.tag_name }}"
