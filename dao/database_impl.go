@@ -41,7 +41,6 @@ func (database *GormDatabase) GetBooking(bookId string) *models.Booking {
 	booking := new(models.Booking)
 	flight := new(models.Flight)
 	database.Gorm.Where("id = ?", bookId).Find(booking)
-
 	booking.Flight = *flight
 	return booking
 }
