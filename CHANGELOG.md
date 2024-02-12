@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.8](https://github.com/oktayalizada/flight-search/compare/v0.0.7...v0.0.8) (2024-02-12)
+
+
+### Bug Fixes
+
+* ci add azcopy to archive ([ad6c932](https://github.com/oktayalizada/flight-search/commit/ad6c9326a168de947cd48bd94a115f4606a637c3))
+
 ## [0.0.7](https://github.com/oktayalizada/flight-search/compare/v0.0.6...v0.0.7) (2024-02-12)
 
 
