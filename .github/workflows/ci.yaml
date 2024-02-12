@@ -1,6 +1,5 @@
 name: ci
 
-
 permissions:
   contents: write
   pull-requests: write
