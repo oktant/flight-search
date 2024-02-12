@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.4](https://github.com/oktayalizada/flight-search/compare/v0.0.3...v0.0.4) (2024-02-12)
+
+
+### Bug Fixes
+
+* token to github-token ([9582de9](https://github.com/oktayalizada/flight-search/commit/9582de924a2e2f7bc206f489e497668a20e67b81))
+
 ## [0.0.3](https://github.com/oktayalizada/flight-search/compare/v0.0.2...v0.0.3) (2024-02-12)
 
 
