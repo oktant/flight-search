@@ -13,7 +13,6 @@ type GormDatabase struct {
 func (database *GormDatabase) GetAllFlights() *[]models.Flight {
 	flights := new([]models.Flight)
 	database.Gorm.Find(flights)
-
 	return flights
 }
 
