@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.7](https://github.com/oktayalizada/flight-search/compare/v0.0.6...v0.0.7) (2024-02-12)
+
+
+### Bug Fixes
+
+* ci.yaml add download ([5b18faa](https://github.com/oktayalizada/flight-search/commit/5b18faaf0798169e03c81498a8e593f6b19ca5e2))
+
 ## [0.0.6](https://github.com/oktayalizada/flight-search/compare/v0.0.5...v0.0.6) (2024-02-12)
 
 
