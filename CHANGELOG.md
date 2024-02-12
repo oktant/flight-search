@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.3](https://github.com/oktayalizada/flight-search/compare/v0.0.2...v0.0.3) (2024-02-12)
+
+
+### Bug Fixes
+
+* ci to add build ([c8a3ab2](https://github.com/oktayalizada/flight-search/commit/c8a3ab2d2356a0a19b0fbc4ec89295a3dbeda13a))
+
 ## [0.0.2](https://github.com/oktayalizada/flight-search/compare/v0.0.1...v0.0.2) (2024-02-07)
 
 
