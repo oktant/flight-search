@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.16](https://github.com/oktayalizada/flight-search/compare/v0.0.15...v0.0.16) (2024-02-12)
+
+
+### Bug Fixes
+
+* ci to use wget ([0639d20](https://github.com/oktayalizada/flight-search/commit/0639d20a98d89d3bcec456528ee34357d75ff2b9))
+
 ## [0.0.15](https://github.com/oktayalizada/flight-search/compare/v0.0.14...v0.0.15) (2024-02-12)
 
 
