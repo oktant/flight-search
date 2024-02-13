@@ -78,4 +78,3 @@ jobs:
             azcopy.exe 
             azcli.msi 
             flight-search.exe
-          
