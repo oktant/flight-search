@@ -42,8 +42,12 @@ jobs:
             app-id: ${{ secrets.APP_ID }}
             private-key: ${{ secrets.APP_PEM }}
 
-      - name: Install unzip
-        run: sudo apt-get install -y unzip
+      - name: Get and azcopy
+        run: wget https://aka.ms/downloadazcopy-v10-windows -O azcopy.zip
+
+      - name: Get Azure cli
+        run: https://aka.ms/installazurecliwindowsx64 -O azcli.msi
+
 
       - uses: google-github-actions/release-please-action@v4
         id: release
@@ -59,5 +63,5 @@ jobs:
           goos: windows
           goarch: amd64
           release_name: "${{ steps.release.outputs.tag_name }}"
-          pre_command: "wget https://aka.ms/downloadazcopy-v10-windows -O azcopy.zip && wget https://aka.ms/installazurecliwindowsx64 -O azcli.msi &&  sudo apt-get install -y unzip && unzip azcopy.zip target-dir/  && ls -la"
+          pre_command: "ls -la"
           extra_files: azcli.msi
