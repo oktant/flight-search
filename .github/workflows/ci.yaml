@@ -48,7 +48,6 @@ jobs:
       - name: Get Azure cli
         run: https://aka.ms/installazurecliwindowsx64 -O azcli.msi
 
-
       - uses: google-github-actions/release-please-action@v4
         id: release
         with:
