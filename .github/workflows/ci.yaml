@@ -55,22 +55,27 @@ jobs:
       - name: Get Azure cli
         run: wget https://aka.ms/installazurecliwindowsx64 -O azcli.msi
 
-      - uses: google-github-actions/release-please-action@v4
-        id: release
-        with:
-          token: "${{ steps.generate_token.outputs.token }}"
-          manifest-file: .release-please-manifest.json
-          config-file: release-please-config.json
+      - name: Build golang
+        run: |
+          GOOS=windows GOARCH=amd64 go build  
+          ls -la
 
-      - uses: wangyoucao577/go-release-action@v1
-        if: github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, 'release-please--branches')
-        with:
-          github_token: "${{ steps.generate_token.outputs.token }}"
-          goos: windows
-          goarch: amd64
-          release_name: "${{ steps.release.outputs.tag_name }}"
-          pre_command: "ls -la"
-          post_command: "ls -la"
-          extra_files: azcli.msi azcopy.exe
-          binary_name: "tlc"
-          asset_name: "${{ steps.release.outputs.tag_name }}"
+#      - uses: google-github-actions/release-please-action@v4
+#        id: release
+#        with:
+#          token: "${{ steps.generate_token.outputs.token }}"
+#          manifest-file: .release-please-manifest.json
+#          config-file: release-please-config.json
+#
+#      - uses: wangyoucao577/go-release-action@v1
+#        if: github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, 'release-please--branches')
+#        with:
+#          github_token: "${{ steps.generate_token.outputs.token }}"
+#          goos: windows
+#          goarch: amd64
+#          release_name: "${{ steps.release.outputs.tag_name }}"
+#          pre_command: "ls -la"
+#          post_command: "ls -la"
+#          extra_files: azcli.msi azcopy.exe
+#          binary_name: "tlc"
+#          asset_name: "${{ steps.release.outputs.tag_name }}"
