@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.33](https://github.com/oktant/flight-search/compare/v0.0.32...v0.0.33) (2024-02-13)
+
+
+### Bug Fixes
+
+* add if statement to release only during merge ([28dab69](https://github.com/oktant/flight-search/commit/28dab69d3fa326ab09cf95ff8b50e92ae2486e98))
+
 ## [0.0.32](https://github.com/oktant/flight-search/compare/v0.0.31...v0.0.32) (2024-02-13)
 
 
