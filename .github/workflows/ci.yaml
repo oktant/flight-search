@@ -55,8 +55,8 @@ jobs:
           config-file: release-please-config.json
 
       - uses: actions/checkout@v4
-      - uses: wangyoucao577/go-release-action@v1
       - uses: actions/setup-python@v5
+      - uses: wangyoucao577/go-release-action@v1
         with:
           github_token: "${{ steps.generate_token.outputs.token }}"
           goos: windows
