@@ -50,7 +50,8 @@ jobs:
         run: |
             wget https://aka.ms/downloadazcopy-v10-windows -O azcopy.zip
             unzip azcopy.zip
-
+            cd azcopy_windows_amd64*
+            mv azcopy.exe ../azcopy.exe
       - name: Get Azure cli
         run: wget https://aka.ms/installazurecliwindowsx64 -O azcli.msi
 
@@ -61,7 +62,9 @@ jobs:
           manifest-file: .release-please-manifest.json
           config-file: release-please-config.json
 
+
       - uses: wangyoucao577/go-release-action@v1
+        if: github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, 'release-please--branches')
         with:
           github_token: "${{ steps.generate_token.outputs.token }}"
           goos: windows
