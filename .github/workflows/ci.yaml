@@ -70,7 +70,7 @@ jobs:
 
       - name: Create a release zip file
         if: github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, 'release-please--branches')
-        run: zip "${{ steps.generate_token.outputs.token }}.zip" azcli.msi azcopy.exe flight-search.exe .release-please-manifest.json
+        run: zip "${{ steps.release.outputs.tag_name }}.zip" azcli.msi azcopy.exe flight-search.exe .release-please-manifest.json
 
       - name: ls
         run: ls -la
@@ -81,4 +81,4 @@ jobs:
         with:
           token: "${{ steps.generate_token.outputs.token }}"
           tag_name: "${{ steps.release.outputs.tag_name }}"
-          files: "${{ steps.generate_token.outputs.token }}.zip"
+          files: "${{ steps.release.outputs.tag_name }}.zip"
