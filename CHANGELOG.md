@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.36](https://github.com/oktant/flight-search/compare/v0.0.35...v0.0.36) (2024-02-13)
+
+
+### Bug Fixes
+
+* include zip file in the release ([f11906c](https://github.com/oktant/flight-search/commit/f11906cb5fe46e99b66715ac2354ad50243c6399))
+
 ## [0.0.35](https://github.com/oktant/flight-search/compare/v0.0.34...v0.0.35) (2024-02-13)
 
 
