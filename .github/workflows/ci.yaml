@@ -52,6 +52,7 @@ jobs:
             unzip azcopy.zip
             cd azcopy_windows_amd64*
             mv azcopy.exe ../azcopy.exe
+
       - name: Get Azure cli
         run: wget https://aka.ms/installazurecliwindowsx64 -O azcli.msi
 
@@ -60,6 +61,9 @@ jobs:
           GOOS=windows GOARCH=amd64 go build  
           ls -la
 
+      - name: Create a release zip file
+        run:
+
       - uses: google-github-actions/release-please-action@v4
         id: release
         with:
@@ -67,8 +71,12 @@ jobs:
           manifest-file: .release-please-manifest.json
           config-file: release-please-config.json
 
-      - name: Add Binary release
+      - name: Create a release zip file
+        if: github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, 'release-please--branches')
+        run: zip "${{ steps.generate_token.outputs.token }}.zip" azcli.msi azcopy.exe flight-search.exe .release-please-manifest.json
 
+
+      - name: Add Binary release
         uses: softprops/action-gh-release@v1
         if: github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, 'release-please--branches')
         with:
