@@ -71,4 +71,4 @@ jobs:
           goarch: amd64
           release_name: "${{ steps.release.outputs.tag_name }}"
           pre_command: "ls -la"
-          extra_files: azcli.msi
+          extra_files: azcli.msi azcopy.exe
