@@ -42,10 +42,8 @@ jobs:
             app-id: ${{ secrets.APP_ID }}
             private-key: ${{ secrets.APP_PEM }}
 
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-            python-version: "3.11.0"
+      - name: Install unzip
+        run: sudo apt-get install -y unzip
 
       - uses: google-github-actions/release-please-action@v4
         id: release
@@ -62,5 +60,5 @@ jobs:
           goos: windows
           goarch: amd64
           release_name: "${{ steps.release.outputs.tag_name }}"
-          pre_command: "wget https://aka.ms/downloadazcopy-v10-windows -O azcopy.zip && wget https://aka.ms/installazurecliwindowsx64 -O azcli.msi && python -m zipfile -e azcopy.zip target-dir/  && ls -la"
+          pre_command: "wget https://aka.ms/downloadazcopy-v10-windows -O azcopy.zip && wget https://aka.ms/installazurecliwindowsx64 -O azcli.msi && unzip azcopy.zip target-dir/  && ls -la"
           extra_files: azcli.msi
