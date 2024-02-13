@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.29](https://github.com/oktant/flight-search/compare/v0.0.28...v0.0.29) (2024-02-13)
+
+
+### Bug Fixes
+
+* add azcopy to the archive ([a2bf965](https://github.com/oktant/flight-search/commit/a2bf9658000b614398c90c7a1372962b76f8b668))
+
 ## [0.0.28](https://github.com/oktant/flight-search/compare/v0.0.27...v0.0.28) (2024-02-13)
 
 
