@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.30](https://github.com/oktant/flight-search/compare/v0.0.29...v0.0.30) (2024-02-13)
+
+
+### Bug Fixes
+
+* release name ([f46dbf3](https://github.com/oktant/flight-search/commit/f46dbf3d8cf09471e8d571bb9e3c1f97fed20c59))
+
 ## [0.0.29](https://github.com/oktant/flight-search/compare/v0.0.28...v0.0.29) (2024-02-13)
 
 
