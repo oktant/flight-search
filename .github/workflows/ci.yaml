@@ -68,8 +68,9 @@ jobs:
           config-file: release-please-config.json
 
       - name: Add Binary release
+
         uses: softprops/action-gh-release@v1
-        if: startsWith(github.ref, 'refs/tags/')
+        if: github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, 'release-please--branches')
         with:
           token: "${{ steps.generate_token.outputs.token }}"
           name: "${{ steps.release.outputs.tag_name }}"
