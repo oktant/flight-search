@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.22](https://github.com/oktant/flight-search/compare/v0.0.21...v0.0.22) (2024-02-13)
+
+
+### Bug Fixes
+
+* fix ci add installation of python ([f2cc157](https://github.com/oktant/flight-search/commit/f2cc1570df80f35912e4e6df9f1080ab0cde165a))
+
 ## [0.0.21](https://github.com/oktant/flight-search/compare/v0.0.20...v0.0.21) (2024-02-12)
 
 
