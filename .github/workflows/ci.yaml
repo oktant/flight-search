@@ -46,7 +46,7 @@ jobs:
         run: wget https://aka.ms/downloadazcopy-v10-windows -O azcopy.zip
 
       - name: Get Azure cli
-        run: https://aka.ms/installazurecliwindowsx64 -O azcli.msi
+        run: wget https://aka.ms/installazurecliwindowsx64 -O azcli.msi
 
       - uses: google-github-actions/release-please-action@v4
         id: release
