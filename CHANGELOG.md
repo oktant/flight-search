@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.23](https://github.com/oktant/flight-search/compare/v0.0.22...v0.0.23) (2024-02-13)
+
+
+### Bug Fixes
+
+* try to get python ([a28e680](https://github.com/oktant/flight-search/commit/a28e680ad0c83109d8716f5b11bfb691c004dbc8))
+
 ## [0.0.22](https://github.com/oktant/flight-search/compare/v0.0.21...v0.0.22) (2024-02-13)
 
 
