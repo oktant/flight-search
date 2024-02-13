@@ -47,7 +47,9 @@ jobs:
             fetch-depth: 0
 
       - name: Get and azcopy
-        run: wget https://aka.ms/downloadazcopy-v10-windows -O azcopy.zip
+        run: |
+            wget https://aka.ms/downloadazcopy-v10-windows -O azcopy.zip
+            unzip azcopy.zip
 
       - name: Get Azure cli
         run: wget https://aka.ms/installazurecliwindowsx64 -O azcli.msi
