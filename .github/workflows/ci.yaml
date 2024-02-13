@@ -72,14 +72,14 @@ jobs:
         if: github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, 'release-please--branches')
         run: zip "${{ steps.generate_token.outputs.token }}.zip" azcli.msi azcopy.exe flight-search.exe .release-please-manifest.json
 
+      - name: ls
+        run: ls -la
+
+
       - name: Add Binary release
         uses: softprops/action-gh-release@v1
         if: github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, 'release-please--branches')
         with:
           token: "${{ steps.generate_token.outputs.token }}"
           tag_name: "${{ steps.release.outputs.tag_name }}"
-          files: |
-            .release-please-manifest.json 
-            azcopy.exe 
-            azcli.msi 
-            flight-search.exe
+          files: "${{ steps.generate_token.outputs.token }}.zip"
