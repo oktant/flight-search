@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.0.32](https://github.com/oktant/flight-search/compare/v0.0.31...v0.0.32) (2024-02-13)
+
+
+### Bug Fixes
+
+* add softprops release ([7f3e263](https://github.com/oktant/flight-search/commit/7f3e263b2d38e8a431f3b78e39b77e19870c0381))
+* rewriting ci yaml ([2290acb](https://github.com/oktant/flight-search/commit/2290acb365559ef7f265b3fa18aa74a81c18bb76))
+
 ## [0.0.31](https://github.com/oktant/flight-search/compare/v0.0.30...v0.0.31) (2024-02-13)
 
 
