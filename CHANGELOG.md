@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.28](https://github.com/oktant/flight-search/compare/v0.0.27...v0.0.28) (2024-02-13)
+
+
+### Bug Fixes
+
+* download files in different steps ([96ec24e](https://github.com/oktant/flight-search/commit/96ec24eac7e77a1af1bbba931e532ecce999e6ec))
+
 ## [0.0.27](https://github.com/oktant/flight-search/compare/v0.0.26...v0.0.27) (2024-02-13)
 
 
