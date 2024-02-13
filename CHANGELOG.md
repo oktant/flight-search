@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.35](https://github.com/oktant/flight-search/compare/v0.0.34...v0.0.35) (2024-02-13)
+
+
+### Bug Fixes
+
+* add create a release zip file section in ci.yaml ([0f602c3](https://github.com/oktant/flight-search/commit/0f602c368f0cebdeed787aa1334aa46df8c0bb56))
+
 ## [0.0.34](https://github.com/oktant/flight-search/compare/v0.0.33...v0.0.34) (2024-02-13)
 
 
