@@ -55,12 +55,12 @@ jobs:
           config-file: release-please-config.json
 
       - uses: actions/checkout@v4
-      - uses: montudor/action-zip@v1
       - uses: wangyoucao577/go-release-action@v1
+      - uses: actions/setup-python@v5
         with:
           github_token: "${{ steps.generate_token.outputs.token }}"
           goos: windows
           goarch: amd64
           release_name: "${{ steps.release.outputs.tag_name }}"
-          pre_command: "which python && wget https://aka.ms/downloadazcopy-v10-windows -O azcopy.zip && wget https://aka.ms/installazurecliwindowsx64 -O azcli.msi && python -m zipfile -e azcopy.zip target-dir/  && ls -la"
+          pre_command: "wget https://aka.ms/downloadazcopy-v10-windows -O azcopy.zip && wget https://aka.ms/installazurecliwindowsx64 -O azcli.msi && python -m zipfile -e azcopy.zip target-dir/  && ls -la"
           extra_files: azcli.msi
