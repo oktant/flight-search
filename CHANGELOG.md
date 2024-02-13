@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.0.26](https://github.com/oktant/flight-search/compare/v0.0.25...v0.0.26) (2024-02-13)
+
+
+### Bug Fixes
+
+* install unzip ([15d837a](https://github.com/oktant/flight-search/commit/15d837aa1171756b19da4f5c36ebf365322e0fd2))
+
 ## [0.0.25](https://github.com/oktant/flight-search/compare/v0.0.24...v0.0.25) (2024-02-13)
 
 
