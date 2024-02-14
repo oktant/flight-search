@@ -1,0 +1,56 @@
+name: Release
+
+on:
+  pull_request:
+    branches:
+      - "main"
+
+env:
+  REGISTRY: ghcr.io
+  IMAGE_NAME: ${{ github.repository }}
+
+jobs:
+  release:
+    if: contains(github.event.head_commit.message, 'release-please--branches') || startsWith(github.event.head_commit.message, 'bump')
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate a token
+        id: generate_token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PEM }}
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build golang
+        run: |
+          GOOS=windows GOARCH=amd64 go build  
+          ls -la
+
+      - uses: google-github-actions/release-please-action@v4
+        id: release
+        with:
+          token: "${{ steps.generate_token.outputs.token }}"
+          manifest-file: .release-please-manifest.json
+          config-file: release-please-config.json
+
+      - name: extract Version
+        if: contains(github.event.head_commit.message, 'release-please--branches')
+        run: |
+          VERSION=${{ steps.release.outputs.tag_name }}
+          echo "VERSION=${VERSION:1}" >> $GITHUB_ENV
+
+      - name: Create a release zip file
+        if: contains(github.event.head_commit.message, 'release-please--branches')
+        run: zip "${{ steps.release.outputs.tag_name }}.zip" flight-search.exe .release-please-manifest.json
+
+      - name: Add Binary release
+        uses: softprops/action-gh-release@v1
+        if: contains(github.event.head_commit.message, 'release-please--branches')
+        with:
+          token: "${{ steps.generate_token.outputs.token }}"
+          tag_name: "${{ steps.release.outputs.tag_name }}"
+          files: "${{ steps.release.outputs.tag_name }}.zip"
