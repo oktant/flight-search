@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.9](https://github.com/oktant/flight-search/compare/v0.1.8...v0.1.9) (2024-02-14)
+
+
+### Bug Fixes
+
+* remove print ([df299d9](https://github.com/oktant/flight-search/commit/df299d979019d67bcfc98ae6b49a9f9505772a5b))
+
 ## [0.1.8](https://github.com/oktant/flight-search/compare/v0.1.7...v0.1.8) (2024-02-14)
 
 
