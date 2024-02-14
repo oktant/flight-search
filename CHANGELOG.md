@@ -1,5 +1,17 @@
 # Changelog
 
+## [0.1.0](https://github.com/oktant/flight-search/compare/v0.0.37...v0.1.0) (2024-02-14)
+
+
+### Features
+
+* add dockerfile ([b23a150](https://github.com/oktant/flight-search/commit/b23a150c5f42c25a70c05e5bbefad0711714ec9f))
+
+
+### Bug Fixes
+
+* move to string.Builder from buffer ([5610a69](https://github.com/oktant/flight-search/commit/5610a69f88778c39afc12ab834b10579b8469474))
+
 ## [0.0.37](https://github.com/oktant/flight-search/compare/v0.0.36...v0.0.37) (2024-02-13)
 
 
