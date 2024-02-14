@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.14](https://github.com/oktant/flight-search/compare/v0.1.13...v0.1.14) (2024-02-14)
+
+
+### Bug Fixes
+
+* package.yaml ([6b4c210](https://github.com/oktant/flight-search/commit/6b4c2102e98ed122a4b9ab2f2bd5fdd504b847d1))
+
 ## [0.1.13](https://github.com/oktant/flight-search/compare/v0.1.12...v0.1.13) (2024-02-14)
 
 
