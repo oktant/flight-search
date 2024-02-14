@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.11](https://github.com/oktant/flight-search/compare/v0.1.10...v0.1.11) (2024-02-14)
+
+
+### Bug Fixes
+
+* package to add env variables ([6699c0f](https://github.com/oktant/flight-search/commit/6699c0feec8a1d957685141fc938ff5f8bc6a537))
+
 ## [0.1.10](https://github.com/oktant/flight-search/compare/v0.1.9...v0.1.10) (2024-02-14)
 
 
