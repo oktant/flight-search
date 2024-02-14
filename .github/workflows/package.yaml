@@ -3,6 +3,8 @@ name: Package
 on:
   release:
     types: [ published, edited ]
+    tags:
+      - "v*.*.*"
 
 env:
   REGISTRY: ghcr.io
