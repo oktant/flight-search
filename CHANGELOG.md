@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.16](https://github.com/oktant/flight-search/compare/v0.1.15...v0.1.16) (2024-02-14)
+
+
+### Bug Fixes
+
+* package remove v version ([7ec7c67](https://github.com/oktant/flight-search/commit/7ec7c67b565c9b619545d6eedcc1ccb5f0624f74))
+
 ## [0.1.15](https://github.com/oktant/flight-search/compare/v0.1.14...v0.1.15) (2024-02-14)
 
 
