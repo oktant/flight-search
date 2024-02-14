@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.3](https://github.com/oktant/flight-search/compare/v0.1.2...v0.1.3) (2024-02-14)
+
+
+### Bug Fixes
+
+* replace github token ([9dc158a](https://github.com/oktant/flight-search/commit/9dc158a81438c8c6232d0a8824f2da03a9f91ebd))
+
 ## [0.1.2](https://github.com/oktant/flight-search/compare/v0.1.1...v0.1.2) (2024-02-14)
 
 
