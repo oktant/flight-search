@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/oktant/flight-search/compare/v0.1.0...v0.1.1) (2024-02-14)
+
+
+### Bug Fixes
+
+* ci ([1552041](https://github.com/oktant/flight-search/commit/15520419ea3f1fdcba447e40c5c2553f8c3373ea))
+
 ## [0.1.0](https://github.com/oktant/flight-search/compare/v0.0.37...v0.1.0) (2024-02-14)
 
 
