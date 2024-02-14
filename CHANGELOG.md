@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.15](https://github.com/oktant/flight-search/compare/v0.1.14...v0.1.15) (2024-02-14)
+
+
+### Bug Fixes
+
+* ci to add tags ([44f0b23](https://github.com/oktant/flight-search/commit/44f0b23bdbcc45ae6aade82ed79cdb593271492a))
+
 ## [0.1.14](https://github.com/oktant/flight-search/compare/v0.1.13...v0.1.14) (2024-02-14)
 
 
