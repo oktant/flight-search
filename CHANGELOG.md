@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.12](https://github.com/oktant/flight-search/compare/v0.1.11...v0.1.12) (2024-02-14)
+
+
+### Bug Fixes
+
+* add tags to package ([2df1a3b](https://github.com/oktant/flight-search/commit/2df1a3bae31ede143bab52a7ce60f312419006fe))
+
 ## [0.1.11](https://github.com/oktant/flight-search/compare/v0.1.10...v0.1.11) (2024-02-14)
 
 
