@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.2](https://github.com/oktant/flight-search/compare/v0.1.1...v0.1.2) (2024-02-14)
+
+
+### Bug Fixes
+
+* separate booking and flight handlers ([d2bce8d](https://github.com/oktant/flight-search/commit/d2bce8d30069d9b550acd24682ea7867c5ebdaf3))
+
 ## [0.1.1](https://github.com/oktant/flight-search/compare/v0.1.0...v0.1.1) (2024-02-14)
 
 
