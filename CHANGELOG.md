@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.10](https://github.com/oktant/flight-search/compare/v0.1.9...v0.1.10) (2024-02-14)
+
+
+### Bug Fixes
+
+* ci to separate concers ([3716d22](https://github.com/oktant/flight-search/commit/3716d228cf11f3b8a315cb7d34c61438bf38ebb2))
+
 ## [0.1.9](https://github.com/oktant/flight-search/compare/v0.1.8...v0.1.9) (2024-02-14)
 
 
