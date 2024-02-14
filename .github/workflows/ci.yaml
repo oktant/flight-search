@@ -96,11 +96,16 @@ jobs:
         with:
           images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
 
-      - name: Release to packages
-        if: github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, 'release-please--branches')
-        uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
-        with:
-          context: .
-          push: true
-          tags: ${{ env.VERSION }}
-          labels: ${{ steps.meta.outputs.labels }}
+      - name: print
+        run: |
+            echo ${{ steps.meta.outputs.tags }}
+            echo ${{ steps.meta.outputs.labels }}
+            echo: ${{ env.VERSION }}
+      # - name: Release to packages
+      #   if: github.ref == 'refs/heads/main' && contains(github.event.head_commit.message, 'release-please--branches')
+      #   uses: docker/build-push-action@f2a1d5e99d037542a71f64918e516c093c6f3fc4
+      #   with:
+      #     context: .
+      #     push: true
+      #     tags: ${{ env.VERSION }}
+      #     labels: ${{ steps.meta.outputs.labels }}
