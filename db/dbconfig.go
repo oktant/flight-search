@@ -1,12 +1,12 @@
 package db
 
 import (
-	"bytes"
 	"flight-search/models"
 	"github.com/labstack/gommon/log"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"os"
+	"strings"
 )
 
 var DB *gorm.DB
@@ -35,18 +35,18 @@ func GetDB() *gorm.DB {
 }
 
 func connectionString() string {
-	var buffer bytes.Buffer
-	buffer.WriteString("host=")
-	buffer.WriteString(os.Getenv("DB_HOST"))
-	buffer.WriteString(" port=")
-	buffer.WriteString(os.Getenv("DB_PORT"))
-	buffer.WriteString(" user=")
-	buffer.WriteString(os.Getenv("DB_USER"))
-	buffer.WriteString(" dbname=")
-	buffer.WriteString(os.Getenv("DB_NAME"))
-	buffer.WriteString(" password=")
-	buffer.WriteString(os.Getenv("DB_PASSWORD"))
-	buffer.WriteString(" sslmode=")
-	buffer.WriteString(os.Getenv("DB_SSL_MODE"))
-	return buffer.String()
+	var csb strings.Builder
+	csb.WriteString("host=")
+	csb.WriteString(os.Getenv("DB_HOST"))
+	csb.WriteString(" port=")
+	csb.WriteString(os.Getenv("DB_PORT"))
+	csb.WriteString(" user=")
+	csb.WriteString(os.Getenv("DB_USER"))
+	csb.WriteString(" dbname=")
+	csb.WriteString(os.Getenv("DB_NAME"))
+	csb.WriteString(" password=")
+	csb.WriteString(os.Getenv("DB_PASSWORD"))
+	csb.WriteString(" sslmode=")
+	csb.WriteString(os.Getenv("DB_SSL_MODE"))
+	return csb.String()
 }
