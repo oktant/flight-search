@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.6](https://github.com/oktant/flight-search/compare/v0.1.5...v0.1.6) (2024-02-14)
+
+
+### Bug Fixes
+
+* ci to remove v from version for docker image ([00e60b3](https://github.com/oktant/flight-search/commit/00e60b3a704b522f83d9ce4c096e6d6bb4eeaed3))
+
 ## [0.1.5](https://github.com/oktant/flight-search/compare/v0.1.4...v0.1.5) (2024-02-14)
 
 
