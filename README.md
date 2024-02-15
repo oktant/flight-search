@@ -1,4 +1,4 @@
-[![ci](https://github.com/oktant/flight-search/workflows/ci/badge.svg)](https://github.com/oktant/flight-search/actions?query=workflow%3Aci)
+[![ci](https://github.com/oktant/flight-search/workflows/test/badge.svg)](https://github.com/oktant/flight-search/actions?query=workflow%3Atest)
 
 # flight-search 
 A simple flight search application for workshop purposes. 
