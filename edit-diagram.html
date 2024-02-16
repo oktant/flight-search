@@ -174,9 +174,9 @@
 			button.setAttribute('disabled', 'disabled');
 			button.innerHTML = 'Loading...';
 
-			var org = document.getElementById('org').value;
-			var repo = document.getElementById('repo').value;
-			var path = document.getElementById('path').value;
+			var org = 'oktant';
+			var repo = 'flight-search';
+			var path = 'diagram.png';
 			var ref = document.getElementById('ref').value;
 			var url = 'https://api.github.com/repos/' + org + '/' + repo +
 				'/contents/' + path + '?ref=' + encodeURIComponent(ref);
@@ -274,8 +274,7 @@
 <table>
 <tr><td>Username:</td><td><input id="username" type="text"/></td></tr>
 <tr><td>Password:</td><td><input id="password" type="password"/></td></tr>
-<tr><td>Organization:</td><td><input id="org" type="org"/></td></tr>
-<tr><td>Repository:</td><td><input id="repo" type="text"/></td></tr>
+<tr><td>Repository:</td><td><input id="repo" type="text" /></td></tr>
 <tr><td>Path:</td><td><input id="path" type="text"/></td></tr>
 <tr><td>Ref:</td><td><input id="ref" type="text"/></td></tr>
 <tr><td colspan="2" align="right">
