@@ -12,7 +12,6 @@ Postgres database, using gorm library
 ## External dependencies
 Entities: booking and flights
 
-<a href="https://app.diagrams.net/#Uhttps%3A%2F%2Fraw.githubusercontent.com%2Foktant%2Fflight-search%2Fmain%2Fdiagram.png" target="_blank">Edit As New</a> 
-<a href="http://jgraph.github.io/drawio-github/edit-diagram.html?repo=flight-search&path=diagram.png" target="_blank">Edit</a> 
+<a href="https://app.diagrams.net/#Hoktant%2Fflight-search%2Fmain%2Fdiagram.png" target="_blank">Edit</a>
 
 
