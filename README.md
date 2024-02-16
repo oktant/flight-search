@@ -13,6 +13,6 @@ Postgres database, using gorm library
 Entities: booking and flights
 
 
-<a href="http://jgraph.github.io/drawio-github/edit-diagram.html?repo=drawio-github&path=diagram.png" target="_blank">Edit</a> 
+<a href="http://jgraph.github.io/drawio-github/edit-diagram.html?repo=flight-search&path=diagram.png" target="_blank">Edit</a> 
 
 
