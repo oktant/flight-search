@@ -1,5 +1,15 @@
 # Changelog
 
+## [0.1.17](https://github.com/oktant/flight-search/compare/v0.1.16...v0.1.17) (2024-02-18)
+
+
+### Bug Fixes
+
+* add a link to edit as new ([5d7b492](https://github.com/oktant/flight-search/commit/5d7b4927c362fc1b4bd2e5092a30b3cf188d1c2b))
+* add edit-diagram.html ([0fa82b6](https://github.com/oktant/flight-search/commit/0fa82b63ffd3a41472bfe97a452e87663e92d494))
+* change name diagram.png ([716f398](https://github.com/oktant/flight-search/commit/716f398230f7d110141b481a50f44011c17ff7d6))
+* URIs change ([1008812](https://github.com/oktant/flight-search/commit/1008812e2d0aaecb066b48f277a5eb11d9df941b))
+
 ## [0.1.16](https://github.com/oktant/flight-search/compare/v0.1.15...v0.1.16) (2024-02-14)
 
 
