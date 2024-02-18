@@ -13,5 +13,3 @@ Postgres database, using gorm library
 Entities: booking and flights
 
 <a href="https://app.diagrams.net/#Hoktant%2Fflight-search%2Fmain%2Fdiagram.png" target="_blank">Edit</a>
-
-
