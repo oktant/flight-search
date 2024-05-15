@@ -50,3 +50,19 @@ jobs:
           tags: |
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{steps.set_version.outputs.no-dash}}
+      
+      - name: Azure Docker Login
+        uses: azure/docker-login@v1
+        with:
+          login-server: ${{ secrets.AZURE_URL }}
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+
+      - name: Build and Push to ACR
+        uses: docker/build-push-action@v2
+        with:
+          push: true
+          tags: | 
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{steps.set_version.outputs.no-dash}}
+            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          file: Dockerfile      
