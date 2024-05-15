@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.1](https://github.com/oktant/flight-search/compare/v0.2.0...v0.2.1) (2024-05-15)
+
+
+### Bug Fixes
+
+* push to acr ([7aa5568](https://github.com/oktant/flight-search/commit/7aa55680ca9f457a9c925ae52d7d47473de70d85))
+
 ## [0.2.0](https://github.com/oktant/flight-search/compare/v0.1.18...v0.2.0) (2024-05-15)
 
 
