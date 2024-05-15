@@ -48,6 +48,6 @@ jobs:
         with:
           push: true
           tags: | 
-            ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{steps.set_version.outputs.no-dash}}
+            ${{ secrets.AZURE_URL }}/${{ env.IMAGE_NAME }}:${{steps.set_version.outputs.no-dash}}
             ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
           file: Dockerfile      
