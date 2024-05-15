@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.18](https://github.com/oktant/flight-search/compare/v0.1.17...v0.1.18) (2024-05-15)
+
+
+### Bug Fixes
+
+* delete unnecessary file ([f0e301e](https://github.com/oktant/flight-search/commit/f0e301e9ea1053b60f66028c756a0c5b66424570))
+
 ## [0.1.17](https://github.com/oktant/flight-search/compare/v0.1.16...v0.1.17) (2024-02-18)
 
 
