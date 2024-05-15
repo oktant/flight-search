@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/oktant/flight-search/compare/v0.1.18...v0.2.0) (2024-05-15)
+
+
+### Features
+
+* upgrade to a new version of golang image ([f67dd10](https://github.com/oktant/flight-search/commit/f67dd102a7290c8bef2c64f864c4a3c8b3ac1d13))
+
 ## [0.1.18](https://github.com/oktant/flight-search/compare/v0.1.17...v0.1.18) (2024-05-15)
 
 
